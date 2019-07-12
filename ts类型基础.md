@@ -48,10 +48,10 @@ let str2 = `我的名字是${username},
 
 - ts中用`void`来表示没有任何返回值的函数
 
-```
-function showName():void {
-    console.log("name")
-}
+    ```
+    function showName():void {
+        console.log("name")
+    }
 ```
 
 - 声明一个`void`变量，它就只能赋值`null`和`undefined`
