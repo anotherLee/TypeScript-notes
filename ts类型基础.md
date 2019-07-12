@@ -46,7 +46,7 @@ let str2 = `我的名字是${username},
 
 ### 空值
 
-ts中用`void`来表示没有任何返回值的函数
+- ts中用`void`来表示没有任何返回值的函数
 
 ```
 function showName():void {
@@ -54,8 +54,8 @@ function showName():void {
 }
 ```
 
-2. 声明一个`void`变量，它就只能赋值`null`和`undefined`
-3. `null`和`undefined`是所有类型的子类型
+-声明一个`void`变量，它就只能赋值`null`和`undefined`
+-`null`和`undefined`是所有类型的子类型
 
 ### 任意值any
 
@@ -71,22 +71,22 @@ function showName():void {
 
 ### 类型推断
 
-1. 如果声明一个变量时进行赋值但没有指定类型，会根据推断给一个类型
+如果声明一个变量时进行赋值但没有指定类型，会根据推断给一个类型
 
-    ```
-    let a = 123;
-    a = "123"; // 报错
-    ```
+```
+let a = 123;
+a = "123"; // 报错
+```
 
 ### 联合类型
 
-1. 表示值可以为多种类型中一种
+- 表示值可以为多种类型中一种
 
     ```
     let a: string | number = 123
     a = "123"
     ```
-2. 当联合类型变量被赋值时，会推断出一个类型
+- 当联合类型变量被赋值时，会推断出一个类型
 
     ```
     let test: string | number = 12
@@ -94,7 +94,7 @@ function showName():void {
     test = "abc"
     console.log(test.length)
     ```
-3. **当访问联合类型的属性或者方法时，只能访问它们共有的属性或者方法**
+- **当访问联合类型的属性或者方法时，只能访问它们共有的属性或者方法**
 
 ### 对象的类型——接口
 
