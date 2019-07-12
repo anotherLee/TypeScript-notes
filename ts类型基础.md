@@ -1,14 +1,16 @@
-#### 布尔值
+### 布尔值
 
-    1. 示例
-    ```
-    let bool: boolean = false;
-    console.log(bool)
-    ```
-    2. 注意事项
-        - 使用构造函数 `new Boolean(1)`创建的不是布尔值而是布尔对象
-        - 直接调用Boolean返回的是布尔**值**
-        - 基本类型中除了null和undefined也有上述两种特征
+1. 示例
+
+```
+let bool: boolean = false;
+console.log(bool)
+```
+
+2. 注意事项
+    - 使用构造函数 `new Boolean(1)`创建的不是布尔值而是布尔对象
+    - 直接调用Boolean返回的是布尔**值**
+    - 基本类型中除了null和undefined也有上述两种特征
 
 #### 数值
 
