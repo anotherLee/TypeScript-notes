@@ -127,6 +127,40 @@ a = "123"; // 报错
     }
     ```
 - 任意属性
+
+    我们还可以给对象添加任意属性
+    ```
+    interface Person {
+        name: string
+        age?: number
+        [propName: string]: any
+    }
+    let person1: Person = {
+        name: "小明",
+        age: 12,
+        gender: "male"
+    }
+    ```
+    这里的 \[propName: string\] 是一个**计算属性名**，一般都是`string`类型，而其属性值可以进行指定。
+    注意：**只要存在任意属性，其它的确定属性和可选属性值类型必须是它的子集**
+    
+- 只读属性
+
+    通过`readonly`修饰符让某些属性只可读，不可写
+    ```
+    interface Person {
+        readonly name: string
+        age?: number
+        [propName: string]: any
+    }
+    let person1: Person = {
+        name: "小明",
+        age: 12,
+        gender: "male"
+    }
+    person1.name = "abc"; // 编译出错
+    ```
+    **重要：只读的约束只在给第一次给对象赋值的时候而不是第一次只读属性赋值的时候**
     
     
     
