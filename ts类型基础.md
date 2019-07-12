@@ -52,7 +52,7 @@ let str2 = `我的名字是${username},
     function showName():void {
         console.log("name")
     }
-```
+    ```
 
 - 声明一个`void`变量，它就只能赋值`null`和`undefined`
 - `null`和`undefined`是所有类型的子类型
